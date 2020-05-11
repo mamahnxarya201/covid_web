@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
 class HrefButton extends StatelessWidget {
+
+  final String url;
+
+  HrefButton(this.url);
+
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
       height: 50.0,
       child: RaisedButton(
         onPressed: () {
           html.window.location.href =
-              "https://kawalcovid19.blob.core.windows.net/viz/statistik_harian.html";
+              url;
         },
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),

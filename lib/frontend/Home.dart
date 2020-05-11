@@ -43,7 +43,13 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       child: KotakIndonesia(data: data),
                     ),
-                    HrefButton()
+                    // Spasi kecil kecilan 
+                    SizedBox(
+                      height: 10,
+                    ),
+                    HrefButton(
+                      "https://kawalcovid19.blob.core.windows.net/viz/statistik_harian.html",
+                    ),
                   ],
                 ),
               );
