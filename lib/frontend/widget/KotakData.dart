@@ -26,12 +26,18 @@ class KotakData extends StatelessWidget {
             title: Text(
               total,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 60),
+              style: TextStyle(
+                fontSize: 60,
+                color: Color(0xFFFFFFFF),
+              ),
             ),
             subtitle: Text(
               label,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(
+                fontSize: 30,
+                color: Color(0xFF9895C3),
+              ),
             ),
           ),
         ),

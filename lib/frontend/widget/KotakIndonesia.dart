@@ -16,17 +16,17 @@ class KotakIndonesia extends StatelessWidget {
         KotakData(
           total: data.summary.confirmed.toString(),
           label: "Jumlah Kasus",
-          color: null,
+          color: Color(0xFF434273),
         ),
         KotakData(
           total: data.summary.deaths.toString(),
           label: "Meninggal",
-          color: null,
+          color: Color(0xFF434273),
         ),
         KotakData(
           total: data.summary.recovered.toString(),
           label: "Sembuh",
-          color: null,
+          color: Color(0xFF434273),
         ),
       ],
     );

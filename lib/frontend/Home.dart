@@ -1,7 +1,9 @@
+import 'package:covid_web/frontend/widget/GradientAppBar.dart';
 import 'package:covid_web/frontend/widget/KotakIndonesia.dart';
 import 'package:flutter/material.dart';
 import 'package:covid_web/backend/providers/coronaProvider.dart';
 import 'package:provider/provider.dart';
+import 'dart:html' as html;
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -23,13 +25,23 @@ class HomeScreen extends StatelessWidget {
             // Tampilkan Widget dengan data
             return Consumer<CoronaProvider>(builder: (context, data, _) {
               return Container(
-                padding: EdgeInsets.all(32.0),
+                color: Color(0xFF3E3963),
                 child: Column(
                   children: <Widget>[
-                    Text("DATA KASUS COVID-19 DI INDONESIA"),
+                    // Appbar jadi jadian :v
+                    GradientAppBar("Flutter COVID-19"),
+                    // Header Text
+                    Text(
+                      "DATA KASUS COVID-19 DI INDONESIA",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w600,
+                          fontSize: 36.0),
+                    ),
                     Container(
-                      child: KotakIndonesia(data: data,)
-                    )
+                      child: KotakIndonesia(data: data),
+                    ),
                   ],
                 ),
               );
