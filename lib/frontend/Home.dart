@@ -1,4 +1,5 @@
 import 'package:covid_web/frontend/widget/GradientAppBar.dart';
+import 'package:covid_web/frontend/widget/HrefButton.dart';
 import 'package:covid_web/frontend/widget/KotakIndonesia.dart';
 import 'package:flutter/material.dart';
 import 'package:covid_web/backend/providers/coronaProvider.dart';
@@ -42,6 +43,7 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       child: KotakIndonesia(data: data),
                     ),
+                    HrefButton()
                   ],
                 ),
               );
