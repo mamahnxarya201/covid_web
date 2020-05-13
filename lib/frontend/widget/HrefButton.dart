@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
 class HrefButton extends StatelessWidget {
-
   final String url;
 
   HrefButton(this.url);
@@ -14,8 +13,7 @@ class HrefButton extends StatelessWidget {
       height: 50.0,
       child: RaisedButton(
         onPressed: () {
-          html.window.location.href =
-              url;
+          html.window.location.href = url;
         },
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
